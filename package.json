@@ -1,0 +1,35 @@
+{
+  "name": "generator-bitmate-browsersync",
+  "version": "1.0.0",
+  "description": "BitMate generator which handle the BrowserSync config",
+  "homepage": "http://bitmate.io/",
+  "repository": "oligibson/generator-bitmate-browsersync",
+  "author": "BitMate",
+  "main": "index.js",
+  "dependencies": {
+    "bitmate-generator": "../bitmate-generator"
+  },
+  "devDependencies": {
+    "ava": "^0.16.0",
+    "chai": "^3.5.0",
+    "chai-spies": "^0.7.1",
+    "cross-spawn": "^5.0.0",
+    "gulp": "gulpjs/gulp#4.0",
+    "gulp-nsp": "^2.3.0",
+    "nyc": "^8.4.0"
+  },
+  "nyc": {
+    "include": [
+      "generators/**/*.js"
+    ],
+    "exclude": [
+      "generators/**/templates/**"
+    ]
+  },
+  "scripts": {
+    "test": "gulp",
+    "prepublish": "gulp prepublish"
+  },
+  "license": "UNLICENSED",
+  "private": true
+}
