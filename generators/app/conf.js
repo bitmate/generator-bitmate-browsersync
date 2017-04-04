@@ -1,4 +1,4 @@
-const lit = require('bitmate-generator').lit;
+const lit = require('@oligibson/bitmate-generator').lit;
 
 module.exports = function browsersyncConf(templateVars) {
   const conf = {

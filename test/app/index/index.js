@@ -3,7 +3,7 @@ const chai = require('chai');
 const expect = chai.expect;
 const spies = require('chai-spies');
 chai.use(spies);
-const Utils = require('bitmate-generator').TestUtils;
+const Utils = require('@oligibson/bitmate-generator').TestUtils;
 
 let context;
 

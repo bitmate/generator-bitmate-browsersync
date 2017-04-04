@@ -1,13 +1,13 @@
 {
-  "name": "generator-bitmate-browsersync",
+  "name": "@oligibson/generator-bitmate-browsersync",
   "version": "1.0.2",
   "description": "BitMate generator which handle the BrowserSync config",
-  "homepage": "http://bitmate.io/",
+  "homepage": "https://bitmate.io/",
   "repository": "oligibson/generator-bitmate-browsersync",
   "author": "BitMate",
   "main": "index.js",
   "dependencies": {
-    "bitmate-generator": "^1.0.2"
+    "@oligibson/bitmate-generator": "^1.0.0"
   },
   "devDependencies": {
     "ava": "^0.16.0",
@@ -39,8 +39,5 @@
   "eslintConfig": {
     "extends": "xo-space/esnext"
   },
-  "license": "UNLICENSED",
-  "publishConfig": {
-    "registry": "http://sinopia.bitmate.io/"
-  }
+  "license": "UNLICENSED"
 }
