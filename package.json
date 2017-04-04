@@ -1,13 +1,13 @@
 {
   "name": "@oligibson/generator-bitmate-browsersync",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "BitMate generator which handle the BrowserSync config",
   "homepage": "https://bitmate.io/",
   "repository": "oligibson/generator-bitmate-browsersync",
   "author": "BitMate",
   "main": "index.js",
   "dependencies": {
-    "@oligibson/bitmate-generator": "^1.0.0"
+    "@oligibson/bitmate-generator": "^1.0.4"
   },
   "devDependencies": {
     "ava": "^0.16.0",
