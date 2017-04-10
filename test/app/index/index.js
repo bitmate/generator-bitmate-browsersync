@@ -1,3 +1,4 @@
+const path = require('path');
 const test = require('ava');
 const chai = require('chai');
 const expect = chai.expect;
@@ -10,13 +11,13 @@ let context;
 test.before(() => {
   context = Utils.mock('app');
   require('../../../generators/app/index');
-  process.chdir('../../../');
+  process.chdir(path.resolve(__dirname, '../../../'));
 });
 
 test(`Add 'browser-sync' and 'browser-sync-spa' to package.json devDependencies`, t => {
   Utils.call(context, 'configuring.package');
-  t.is(context.mergeJson['package.json'].devDependencies['browser-sync'], '^2.9.11');
-  t.is(context.mergeJson['package.json'].devDependencies['browser-sync-spa'], '^1.0.3');
+  t.is(context.mergeJson['package.json'].devDependencies['browser-sync'], '2.18.8');
+  t.is(context.mergeJson['package.json'].devDependencies['browser-sync-spa'], '1.0.3');
 });
 
 test(`Call 'copyTemplate' twice and copy the files`, t => {

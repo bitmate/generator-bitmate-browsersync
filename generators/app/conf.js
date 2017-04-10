@@ -1,3 +1,5 @@
+/* eslint func-names: 0 */  // --> OFF
+
 const lit = require('@oligibson/bitmate-generator').lit;
 
 module.exports = function browsersyncConf(templateVars) {

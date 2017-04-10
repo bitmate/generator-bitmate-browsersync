@@ -6,8 +6,8 @@ module.exports = bitmate.Base.extend({
     package() {
       const pkg = {
         devDependencies: {
-          'browser-sync': '^2.9.11',
-          'browser-sync-spa': '^1.0.3'
+          'browser-sync': '2.18.8',
+          'browser-sync-spa': '1.0.3'
         }
       };
 
