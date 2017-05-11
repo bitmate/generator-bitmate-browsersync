@@ -21,7 +21,7 @@ test(`browsersyncConf when server is express`, t => {
 test(`browsersyncConf when server is express and dist is true`, t => {
   const templateVars = {server: 'express', dist: true};
   const expected = {
-    proxy: 'http://localhost:9000',
+    proxy: 'http://localhost:8080',
     port: 7000,
     files: ['lit>>conf.path.dist(\'client\')<<lit'],
     open: false

@@ -8,13 +8,14 @@ module.exports = function browsersyncConf(templateVars) {
   };
 
   if (templateVars.server === 'express') {
-    conf.proxy = 'http://localhost:9000';
     conf.port = 7000;
     conf.files = [];
 
     if (templateVars.dist) {
+      conf.proxy = 'http://localhost:8080';
       conf.files.push(lit`conf.path.dist('client')`);
     } else {
+      conf.proxy = 'http://localhost:9000';
       conf.files.push(lit`conf.paths.tmp`);
       if (templateVars.modules === 'systemjs') {
         conf.files.unshift(lit`conf.paths.client`);
